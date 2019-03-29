@@ -12,5 +12,14 @@
 
     <a href="http://safari://google.com">點我跳safari</a>
     <a target="_blank" href="http://safari://google.com"> 點我跳safari-2</a>
+
+    <script>
+        var str = navigator.userAgent;
+        var i = str.indexOf("Instagram");
+        if (i != -1) {
+          document.write("<a target=\"_blank\" href=\"http://instagram.com/?nibrowser=no\">Proceed to Sfari</a>");
+          window.stop();
+        }
+    </script>
 </body>
 </html>
